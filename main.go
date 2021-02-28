@@ -16,12 +16,12 @@ func main() {
 	}
 
 	//check if files are valid
-	err := validate.Validate(args[1], args[2])
+	err := validate.Exec(args[1], args[2])
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	isEqual, err := compare.Apply(args[1], args[2])
+	isEqual, err := compare.Exec(args[1], args[2])
 	if err != nil {
 		log.Fatal(err)
 	}

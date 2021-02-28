@@ -66,7 +66,7 @@ func TestComplexTransformJsonToHashFromTwoJsonShouldReturnTwoHashs2(t *testing.T
 
 func TestSimpleCompareSimilarJsonFilesMustReturnTrue(t *testing.T){
 
-	isEqual, _ := Apply("../dummy-json/json_before_2_3M.json", "../dummy-json/json_before_2_3M_clone_revert_order.json")
+	isEqual, _ := Exec("../dummy-json/json_before_2_3M.json", "../dummy-json/json_before_2_3M_clone_revert_order.json")
 
 	if !isEqual {
 		t.Error("Compare same json files must return true")
@@ -75,7 +75,7 @@ func TestSimpleCompareSimilarJsonFilesMustReturnTrue(t *testing.T){
 
 func TestSimpleCompareDiffJsonFilesMustReturnFalse(t *testing.T){
 
-	isEqual, _ := Apply("../dummy-json/json_before_2_3M.json", "../dummy-json/json_before_2_3M_clone_revert_order_diff.json")
+	isEqual, _ := Exec("../dummy-json/json_before_2_3M.json", "../dummy-json/json_before_2_3M_clone_revert_order_diff.json")
 
 	if isEqual {
 		t.Error("Compare diff json files must return false")
@@ -83,7 +83,7 @@ func TestSimpleCompareDiffJsonFilesMustReturnFalse(t *testing.T){
 }
 
 func TestComplexCompareSameJsonFilesMustReturnTrue(t *testing.T){
-	isEqual, _ := Apply("../dummy-json/json_complex_one_json_schema.json", "../dummy-json/json_complex_one_json_schema.json")
+	isEqual, _ := Exec("../dummy-json/json_complex_one_json_schema.json", "../dummy-json/json_complex_one_json_schema.json")
 
 	if !isEqual {
 		t.Error("Compare same json files must return true")
@@ -91,7 +91,7 @@ func TestComplexCompareSameJsonFilesMustReturnTrue(t *testing.T){
 }
 
 func TestComplexCompareSimilarJsonFilesMustReturnTrue(t *testing.T){
-	isEqual, _ := Apply("../dummy-json/json_complex_one_json_schema.json", "../dummy-json/json_complex_one_json_schema_clone.json")
+	isEqual, _ := Exec("../dummy-json/json_complex_one_json_schema.json", "../dummy-json/json_complex_one_json_schema_clone.json")
 
   	if !isEqual {
 		t.Error("Compare similar json files must return true")
@@ -110,7 +110,7 @@ func TestMoreComplexOneCompareSimilarJsonFilesMustReturnTrue(t *testing.T){
 
 func TestMoreComplexCompareSameJsonFilesMustReturnTrue(t *testing.T){
 
-	isEqual, _ := Apply("../dummy-json/json_other_more_complex_json_schema.json"	, "../dummy-json/json_other_more_complex_json_schema.json")
+	isEqual, _ := Exec("../dummy-json/json_other_more_complex_json_schema.json"	, "../dummy-json/json_other_more_complex_json_schema.json")
 
 	if !isEqual {
 		t.Error("Compare similar json files must return true")
@@ -119,7 +119,7 @@ func TestMoreComplexCompareSameJsonFilesMustReturnTrue(t *testing.T){
 
 func TestMoreComplexCompareSimilarJsonFilesMustReturnTrue(t *testing.T){
 
-	isEqual, _ := Apply("../dummy-json/json_other_more_complex_json_schema.json", "../dummy-json/json_other_more_complex_json_schema_clone.json")
+	isEqual, _ := Exec("../dummy-json/json_other_more_complex_json_schema.json", "../dummy-json/json_other_more_complex_json_schema_clone.json")
 
 	if !isEqual {
 		t.Error("Compare similar json files must return true")
@@ -128,7 +128,7 @@ func TestMoreComplexCompareSimilarJsonFilesMustReturnTrue(t *testing.T){
 
 func TestMoreComplexCompareDiffJsonFilesMustReturnFalse2(t *testing.T){
 
-	isEqual, _ := Apply("../dummy-json/json_other_more_complex_json_schema.json", "../dummy-json/json_other_more_complex_json_schema_diff.json")
+	isEqual, _ := Exec("../dummy-json/json_other_more_complex_json_schema.json", "../dummy-json/json_other_more_complex_json_schema_diff.json")
 
 	if isEqual {
 		t.Error("Compare similar json files must return trues")

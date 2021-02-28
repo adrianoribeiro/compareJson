@@ -19,7 +19,7 @@ const (
 	problemToRetrieveJsonData = "problem to retrieve json data"
 )
 
-func Apply(jsonFile string, jsonFileBkp string) (bool, error) {
+func Exec(jsonFile string, jsonFileBkp string) (bool, error) {
 
 	jsonHash := transformJsonToHash(jsonFile)
 

@@ -8,7 +8,7 @@ import (
 
 //It is just to protect.
 const limitPercentageSizeDiff = 50
-func Validate(fileName, fileBkpName string) error{
+func Exec(fileName, fileBkpName string) error{
 	file, err := compare.OpenFile(fileName)
 	if err != nil {
 		return err
@@ -35,7 +35,8 @@ func validateSize(sizeFile int64, sizeFileBkp int64) error{
 	}
 	diffSize := math.Abs(float64(sizeFile - sizeFileBkp))
 
-	if diffSize > (float64(bigger) * (1 -(float64(100-limitPercentageSizeDiff)/100))) {
+	percentageAllowed := 1 - (float64(100-limitPercentageSizeDiff) / 100)
+	if diffSize > (float64(bigger) * percentageAllowed) {
 		return errors.New("the diff size of the values is significant so they are different")
 	}
 
