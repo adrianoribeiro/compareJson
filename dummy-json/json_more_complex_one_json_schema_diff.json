@@ -1,0 +1,41 @@
+[
+  {
+    "address": [
+      {
+        "street": "11 Rue du Grenier Saint-Lazare",
+        "postalCode": "75003-111",
+        "city": "Paris",
+        "countryCode": "FRA",
+        "country": "France",
+        "text": "11 Rue du Grenier Saint-Lazare, 75003 Paris, France"
+      },
+      {
+        "street": "22 Rue du Grenier Saint-Lazare",
+        "postalCode": "75003-222",
+        "city": "Paris",
+        "countryCode": "FRA",
+        "country": "France",
+        "text": "22 Rue du Grenier Saint-Lazare, 75003 Paris, France"
+      },
+      {
+        "street": "33 Rue du Grenier Saint-Lazare",
+        "postalCode": "75003-333",
+        "city": "Paris",
+        "countryCode": "FRA",
+        "country": "France",
+        "text": "33 Rue du Grenier Saint-Lazare, 75003 Paris, France"
+      }
+    ],
+    "Other1": "abcdefghijklmnopqrstuvwxyz1",
+    "FirstName": "abcdefghijklmnopqrstuvwxyz1",
+    "Id": 1,
+    "LastName": "abcdefghijklmnopqrstuvwxyz1",
+    "image": {
+      "src": "Images/Moon.png",
+      "name": "moon1",
+      "hOffset": 252,
+      "vOffset": 251,
+      "alignment": "left"
+    }
+  }
+]

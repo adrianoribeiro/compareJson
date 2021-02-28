@@ -1,0 +1,23 @@
+[
+{
+  "Other1": "abcdefghijklmnopqrstuvwxyz1",
+  "FirstName": "abcdefghijklmnopqrstuvwxyz1",
+  "Id": 1,
+  "LastName": "abcdefghijklmnopqrstuvwxyz1",
+  "address": {
+    "countryCode": "FRA",
+    "postalCode": "75003",
+    "city": "Paris",
+    "text": "22 Rue du Grenier Saint-Lazare, 75003 Paris, France",
+    "street": "22 Rue du Grenier Saint-Lazare",
+    "country": "France"
+  },
+  "image": {
+    "alignment": "left",
+    "name": "moon1",
+    "src": "Images/Moon.png",
+    "vOffset": 251,
+    "hOffset": 251
+  }
+}
+]
