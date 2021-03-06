@@ -21,7 +21,7 @@ func main() {
 		log.Fatal(err)
 	}
 
-	isEqual, err := compare.Exec(args[1], args[2])
+	isEqual, err := compare.ExecParallel(args[1], args[2])
 	if err != nil {
 		log.Fatal(err)
 	}
